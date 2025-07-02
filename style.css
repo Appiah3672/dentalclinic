@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Background */
+body {
+  background-color: #85999d;
+}
+
+/* Fixed Navigation Bar on Right */
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #537c87;
+  padding: 15px 30px;
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: #1c778b;
+}
+
+/* Main Layout */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  padding-top: 70px; /* to clear space for fixed nav */
+}
+
+/* Left Side: Text and Logo */
+.left-side {
+  width: 50%;
+  padding: 50px 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.logo-section {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.clinic-name div {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+/* Welcome Text */
+.welcome-text {
+  margin-top: 30px;
+}
+
+.intro-text {
+  font-size: 50px;
+  line-height: 1.5;
+}
+
+.bold-message {
+  font-size: 75px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+/* Right Side: Image */
+.right-side {
+  width: 50%;
+  height: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Our Service Section */
+.second-page {
+  font-family: 'Montserrat';
+  color: #55686e;
+  background-color: #e5e9eb;
+  padding-top: 100px;
+}
+
+/* Top section */
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #aebabc;
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+.top-section .left-side {
+  flex: 1;
+}
+
+.top-section .main-heading {
+  font-size: 50px;
+  font-weight: bold;
+  color: #55686e;
+  margin: 0;
+}
+
+.middle-logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-logo img.service-logo {
+  width: 400px;
+  height: auto;
+}
+
+.right-list {
+  flex: 1;
+}
+
+.right-list ul.service-bullets {
+  font-size: 25px;
+  list-style-type: disc;
+  padding-left: 200px;
+  margin: 0;
+  gap:10px
+}
+
+.twinkle-icon {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 20px;
+
+}
+
+/* Bottom section */
+.bottom-section {
+  background-color: #e5e9eb;
+  padding: 30px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.services-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 100px 0;
+}
+
+.service-column {
+  width: 33%;
+  text-align: center;
+}
+
+.service-column h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-column ul {
+  font-size: 16px;
+  list-style-type: disc;
+  padding-left: 30px;
+  text-align: left;
+}
+.about-us-section {
+  padding: 40px;
+  font-family: 'Montserrat';
+  color: #55686e;
+  background-color: #e5e9eb;
+}
+
+/* Top Section */
+.about-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.about-left,
+.about-right {
+  flex: 1;
+}
+
+.about-heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #55686e;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 18px;
+  color: #55686e;
+  line-height: 1.6;
+}
+
+.why-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: #55686e;
+  margin-bottom: 15px;
+}
+
+.why-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 18px;
+  color: #55686e;
+  line-height: 1.7;
+}
+
+/* Bottom Section */
+.about-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Doctors Section */
+.doctor-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+}
+
+.doctor-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.doctor-scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.doctor-card {
+  flex: 0 0 auto;
+  width: 115px;
+  min-height: 300px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(191, 246, 11, 0.1);
+  text-align: center;
+  color: #55686e;
+}
+
+.doctor-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.doctor-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.doctor-card h4 span {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-top: 4px;
+}
+
+.doctor-card p {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+/* Vision, Mission, Core Values */
+.vmc-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.vmc-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.vmc-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.vmc-item h4 {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+  color: #e5e9eb;
+  font-weight: 600;
+}
+
+.vmc-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #55686e;
+  line-height: 1.5;
+}
+
+.patient-review-section {
+  display: flex;
+  background-color: #e5e9eb;
+  padding: 80px 60px;
+  font-family: 'Montserrat', sans-serif;
+  color: #55686e;
+}
+
+.review-left,
+.review-right {
+  flex: 1;
+}
+
+.review-left {
+  padding-right: 40px;
+}
+
+.review-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.review-block {
+  margin-bottom: 40px;
+}
+
+.review-text {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.reviewer-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3e43;
+}
+
+.review-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(85, 104, 110, 0.3);
+}
+/* Fifth Page – Contact Section */
+.contact-section {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #e5e9eb;
+  padding: 50px;
+  box-sizing: border-box;
+  font-family: 'Kelin Eator', sans-serif;
+  color: #55686e;
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 30px;
+}
+
+.contact-heading {
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.contact-arrow {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.contact-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+
+.contact-item p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.safety-note {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #55686e;
+}
+.sixth-page {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to right, #e5e9eb, #55686e); /* sea blue to blue */
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.book-btn {
+  border: 2px solid #55686e; /* sea blue */
+  background: transparent;
+  color: #55686e;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: 200px;
+  text-align: center;
+}
+
+.book-btn:hover {
+  background-color: #55686e;
+  color: #e5e9eb;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 220px;
+}
+
+.booking-form input {
+  border: 2px solid #55686e;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.booking-form input:focus {
+  border-color: #55686e;
+}
+
+.submit-btn {
+  width: 100%;
+}
+
+.success-msg {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
